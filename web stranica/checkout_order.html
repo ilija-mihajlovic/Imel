@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/checkout_order.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="layout">
+                <div class="left_side">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="list">
+                        <p>Information
+                            <img src="./images/details/Vector 1.png" alt="" class="arrow">Payment <img src="./images/details/Vector 1.png" alt="" class="arrow">Confirm</p>
+                    </div>
+                    <h1 style="font-size:20px; margin-top: 40px;">Thank you for your order!</h1>
+                    <p style="font-size: 12px; color: #4F4F4F; margin-top: 40px;">
+                        The order will be processed within next 48 hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="float: right; background-color: #ffffff; height: 100vh;width: 40%;" class="right">
+            <div id="cart">
+                <div class="cart_container ">
+                    <h1>
+                        Cart
+                    </h1>
+                    <div class="items">
+                        <div class="product1 ">
+                            <img src="./images/women_outfit_4_small.png " alt=" " style="height: 100%; ">
+                            <div class="product1_details">
+                                <p class="mobile_txt">RECYCLED POLYESTER PERFORMANCE PARKA</p>
+                                <p class="price price-2 mobile_txt">€135 x 1</p>
+                            </div>
+                        </div>
+                        <div class="product2 ">
+                            <img src="./images/women_outfit_3_small.png " alt=" " style="height: 100%; ">
+                            <div class="product2_details">
+                                <p class="mobile_txt">RECYCLED POLYESTER PERFORMANCE PARKA</p>
+                                <p class="price price-2 mobile_txt">€135 x 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cost">
+                        <div class="cost_left">
+                            <p class="label">Subtotal</p>
+                            <p class="price">€405</p>
+
+                        </div>
+                        <div class="cost_right ">
+                            <p class="label">Taxes</p>
+                            <p class="price">€81</p>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h1 style="float: left;">Total</h1>
+                        <h1 style="text-align: right;">€486</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p style="text-align: center; font-size: 20px;">Copyright 2020</p>
+    </footer>
+
+    <script>
+        function order() {
+            document.location.href = "checkout_order.html"
+        }
+    </script>
+</body>
+
+</html>

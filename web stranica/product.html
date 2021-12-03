@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/product.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="wrapper">
+                <nav id="nav_1">
+                    <ul>
+                        <li><a href="women_category_page.html">Women</a></li>
+                        <li><a href="men_category_page.html">Men</a></li>
+                        <li><a href="#"><span class="highlight">Sale</span</a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo">
+                </div>
+                <nav id="nav_2">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li>
+                            <a id="btn1" onclick="cart_popup()"> Cart</a>
+                        </li>
+                        <li class="icon"><i class="fa fa-bars"></i></li>
+                    </ul>
+                </nav>
+                <nav id="nav_3">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="Logo Image">
+                    </div>
+                    <div class="lines">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="women_category_page.html">Women</a></li>
+                        <li><a href="men_category_page.html">Men</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><button class="login-button" href="#">Sign in</button></li>
+                    </ul>
+                </nav>
+                <script src="./js/nav.js"></script>
+            </div>
+        </div>
+    </header>
+    <div id="cart">
+        <div class="cart_container ">
+            <h1>
+                Cart
+            </h1>
+            <div class="items ">
+                <div class="product1 ">
+                    <img src="./images/women_outfit_4_small.png " alt=" " style="height: 100%; " onclick="product_page()">
+                    <div class="product1_details ">
+                        <p>RECYCLED POLYESTER PERFORMANCE PARKA</p>
+                        <p>€135 x 1</p>
+                    </div>
+                </div>
+                <div class="product2 ">
+                    <img src="./images/women_outfit_3_small.png " alt=" " style="height: 100%; ">
+                    <div class="product2_details ">
+                        <p>RECYCLED POLYESTER PERFORMANCE PARKA</p>
+                        <p>€135 x 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cost ">
+                <div class="cost_left ">
+                    <p class="label">Subtotal</p>
+                    <p class="price">€405</p>
+
+                </div>
+                <div class="cost_right ">
+                    <p class="label" style="margin-top: 4%;">Taxes</p>
+                    <p class="price" style="margin-top: 4%;">€81</p>
+                </div>
+            </div>
+            <div class="total ">
+                <h1 style="float: left; ">Total</h1>
+                <h1 style="text-align: right; ">€486</h1>
+            </div>
+            <div style="text-align: center; ">
+                <button id="btn3" onclick="checkout()">
+                Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+    <section class="product_details">
+        <div class="container">
+            <div class="grid1">
+                <div class="images">
+                    <div><img src="./images/women_outfit_4.png" alt="" class="pro-img" style="width: 100%; height: 50%;"></div>
+                    <div></div>
+                </div>
+                <div class="description">
+                    <h3 style="margin-top: 4.5%;">RECYCLED POLYESTER PERFORMANCE PARKA</h3>
+                    <div class="grid_right">
+                        <p>€135</p>
+                        <div class="half">
+                            <p>
+                                Crafted from an organic cotton-mulberry silk mix, this oversized cardigan features a elasticated body and dropped shoulder. Effortlessly style with tonal shorts and pumps.
+                                <ul class="mg-top lista">
+                                    <li>- Relaxed fit</li>
+                                    <li>- Dropped shoulder</li>
+                                    <li>- Elasticated body</li>
+                                    <li>- Ribbed cuff</li>
+                                </ul>
+                            </p>
+                            <p>
+                                32% Polyamide, 29% Viscose, 23% Mulberry silk, 15% Organic cotton, 1% Elastane / Machine washable Back length of size XS/S is 70cm
+                            </p>
+                            <p class="mg-top under_list">
+                                Back length of size XS/S is 70cm
+                            </p>
+                            <button type="submit" id="btn" class="regular_btn" onclick="scrollToTop()" style="margin-top: 20%;">
+                                Add to Cart
+                            </button>
+                            <div class="under_btn">
+                                <p>
+                                    32% Polyamide / 29% Viscose / 23% Silk / 15% Cotton / 1% Elastane / Machine washable
+                                </p>
+                                <p class="mg-top">
+                                    Make sure that your favourite items remain long-loved pieces for years to come; read our product care guide and explore our selection of carefully chosen care products.
+                                </p>
+                                <p class="mg-top top_btn">
+                                    Product No:<br> 0930647001
+                                </p>
+                                <button type="submit" id="btn" class="mobile_btn">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid2 thumb-img">
+                    <div class="box active" onclick="changeImage(this)">
+                        <img src="./images/women_outfit_4.png" alt="" class="angles">
+                    </div>
+                    <div class="box" onclick="changeImage(this)">
+                        <img src="./images/woman_different_angle1.png" alt="" class="angles">
+                    </div>
+                    <div class="box" onclick="changeImage(this)">
+                        <img src="./images/woman_different_angle2.png" alt="" class="angles">
+                    </div>
+                    <div class="box" onclick="changeImage(this)">
+                        <img src="./images/woman_different_angle3.png" alt="" class="angles">
+                    </div>
+                    <div class="box" onclick="changeImage(this)">
+                        <img src="./images/woman_different_angle4.png" alt="" class="angles">
+                    </div>
+                </div>
+            </div>
+            <div class="grid3">
+                <p class="like">
+                    You might also like
+                </p>
+                <div>
+                    <div class="product">
+                        <img src="./images/women_outfit_1.png" alt="" style="width: 100%;">
+                        <h1 class="name">RECYCLED POLYESTER PERFORMANCE PARKA</h1>
+                        <p class="price" style="text-align: center; margin-bottom: 20px;">€135</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="product">
+                        <img src="./images/women_outfit_2.png" alt="" style="width: 100%;">
+                        <h1 class="name">RECYCLED POLYESTER PERFORMANCE PARKA</h1>
+                        <p class="price" style="text-align: center;">€135</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="product">
+                        <img src="./images/women_outfit_3.png" alt="" style="width: 100%;">
+                        <h1 class="name">RECYCLED POLYESTER PERFORMANCE PARKA</h1>
+                        <p class="price" style="text-align: center;">€135</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright 2020</p>
+        </div>
+    </footer>
+    <script src="./js/product_pictures.js"></script>
+    <script src="./js/cart_popup.js"></script>
+    <script src="./js/product_pictures.js"></script>
+</body>
+
+</html>

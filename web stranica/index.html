@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="container">
+                <div class="wrapper">
+                    <nav id="nav_1">
+                        <ul>
+                            <li><a href="women_category_page.html">Women</a></li>
+                            <li><a href="men_category_page.html">Men</a></li>
+                            <li><a href="#"><span class="highlight">Sale</span</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                    <nav id="nav_2">
+                        <ul>
+                            <!--<div class="counter">1</div>-->
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li>
+                                <a id="btn1" onclick="cart_popup()"> Cart</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav id="nav_3">
+                        <div class="logo">
+                            <img src="./images/logo.png" alt="Logo Image">
+                        </div>
+                        <div class="lines">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                        <ul class="nav-links">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <li><button class="login-button" href="#">Sign in</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="cart">
+            <div class="cart_container ">
+                <h1>
+                    Cart
+                </h1>
+                <div class="items ">
+                    <div class="product1 ">
+                        <img src="./images/women_outfit_4_small.png " alt=" " style="height: 100%; " onclick="product()">
+                        <div class="product1_details ">
+                            <p>RECYCLED POLYESTER PERFORMANCE PARKA</p>
+                            <p>€135 x 1</p>
+                        </div>
+                    </div>
+                    <div class="product2 ">
+                        <img src="./images/women_outfit_3_small.png " alt=" " style="height: 100%; ">
+                        <div class="product2_details ">
+                            <p>RECYCLED POLYESTER PERFORMANCE PARKA</p>
+                            <p>€135 x 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cost ">
+                    <div class="cost_left ">
+                        <p class="label ">Subtotal</p>
+                        <p class="price ">€405</p>
+
+                    </div>
+                    <div class="cost_right ">
+                        <p class="label ">Taxes</p>
+                        <p class="price ">€81</p>
+                    </div>
+                </div>
+                <div class="total ">
+                    <h1 style="float: left; ">Total</h1>
+                    <h1 style="text-align: right; ">€486</h1>
+                </div>
+                <div style="text-align: center; ">
+                    <button class="btn" onclick="checkout()">
+                    Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+        <section id="showcase">
+            <div class="container">
+                <div class="grid1">
+                    <div class="left ">
+                        <div>
+                            <img src="./images/women_model.png" alt=" " class="first click" onclick="women()">
+                            <p onclick="women()" class="click">Women</p>
+                        </div>
+                        <div class="upper">
+                            <div>
+                            </div>
+                            <div class="under ">
+                                <img src="./images/women_shoes.png" alt=" " class="click" style="width: 100%; margin-left: .01%; " onclick="women()">
+                                <p onclick="women()" class="click"><span class="highlight">Sale</span> (Women)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <img src="./images/men_model.png" alt=" " class="second " onclick="men()" class="click">
+                            <p style="float: right; position: absolute; right:4.2%; " onclick="men()" class="click">Men</p>
+                        </div>
+                        <div class="upper2">
+                            <div class="under2 ">
+                                <img src="./images/men_shoes.png " alt=" " style="width: 100%; " onclick="men()" class="click">
+                                <p style="float: right; " onclick="men()" class="click"><span class="highlight ">Sale</span> (Men)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="categories">
+            <div class="container">
+                <div class="ctg ">
+                    <div class="men_category">
+                        <a href="men_category_page.html ">
+                            <img src="./images/men_category.png " alt="" style="width: 100%; ">
+                        </a>
+                    </div>
+                    <div class="women_category">
+                        <a href="women_category_page.html ">
+                            <img src="./images/women_category.png " alt="" style="width: 100%; ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Copyright 2020</p>
+        </div>
+    </footer>
+    <script src="./js/cart_popup.js"></script>
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>
